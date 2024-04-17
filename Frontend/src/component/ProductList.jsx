@@ -56,8 +56,8 @@ function ProductList() {
                                         </tr>
                                     })
                                 ) : (
-                                    <tr colSpan={'4'}>
-                                        <td>No product Found</td>
+                                    <tr>
+                                        <td colspan="4">No product Found</td>
                                     </tr>
                                 )}
                             </tbody>

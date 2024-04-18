@@ -9,6 +9,7 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ProductList from './component/ProductList'
+import CreateProduct from './component/CreateProduct';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                     <Col md={12}>
                         <Routes>
                             <Route exact path='/' element={<ProductList/>} />
+                            <Route exact path='/product/create' element={<CreateProduct/>} />
                         </Routes>
                     </Col>
                 </Row>

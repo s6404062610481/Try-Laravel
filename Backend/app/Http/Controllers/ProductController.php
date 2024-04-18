@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
+
 class ProductController extends Controller
 {
     /**
@@ -13,6 +17,7 @@ class ProductController extends Controller
     public function index()
     {
         //
+        return Product::select('id', 'title', 'description', 'image')->get();
     }
 
     /**
